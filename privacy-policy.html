@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup to Tab — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f0f1a;
+      color: #ccc;
+      line-height: 1.7;
+      padding: 48px 24px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 18px;
+      color: #e0e0e0;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 24px;
+      margin-bottom: 14px;
+    }
+    li {
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+    code {
+      background: #1a1a2e;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #22c55e;
+    }
+    a { color: #22c55e; }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #222;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Popup to Tab &mdash; Last updated: February 14, 2026</p>
+
+    <h2>Overview</h2>
+    <p>Popup to Tab is a browser extension that converts popup windows into tabs.
+       It is designed with a strict no-data-collection policy. We do not collect,
+       store, transmit, or sell any user data whatsoever.</p>
+
+    <h2>Data Collection</h2>
+    <p><strong>We collect nothing.</strong> Specifically:</p>
+    <ul>
+      <li>No personal information (name, email, location, IP address)</li>
+      <li>No browsing history, URLs, or page content</li>
+      <li>No cookies, tokens, or session data</li>
+      <li>No analytics, telemetry, or crash reports</li>
+      <li>No advertising identifiers</li>
+    </ul>
+
+    <h2>Permissions Explained</h2>
+    <p>The extension requests two Chrome permissions:</p>
+    <ul>
+      <li><code>tabs</code> &mdash; Allows the extension to detect when a popup
+          window is created and move its tab into your current browser window.
+          The extension does not read tab URLs or page content.</li>
+      <li><code>storage</code> &mdash; Saves a single boolean value (enabled/disabled)
+          to <code>chrome.storage.local</code> so your preference persists across
+          browser restarts. This data never leaves your device.</li>
+    </ul>
+
+    <h2>Network Activity</h2>
+    <p>The extension makes zero network requests. It does not communicate with any
+       server, API, or third-party service. All processing happens entirely within
+       your browser.</p>
+
+    <h2>Local Storage</h2>
+    <p>The only data stored is a single setting (<code>{"enabled": true/false}</code>)
+       kept in <code>chrome.storage.local</code> on your device. This is never
+       synced, uploaded, or shared.</p>
+
+    <h2>Third Parties</h2>
+    <p>There are no third-party libraries, SDKs, analytics tools, or external
+       dependencies included in this extension.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>The extension does not collect data from anyone, including children under
+       the age of 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy is updated, the changes will be reflected on this page with
+       an updated date. Since the extension collects no data, meaningful policy
+       changes are unlikely.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, you can reach the developer
+       at <a href="mailto:njs@njs.cx">njs@njs.cx</a>.</p>
+
+    <div class="footer">
+      &copy; 2026 Popup to Tab. This extension is open source.
+    </div>
+  </div>
+</body>
+</html>
